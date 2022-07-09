@@ -1,84 +1,21 @@
-/* Sets box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* ===== CUSTOM PROPERTIES ===== */
 
-/* Removes default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
+:root {
+  --ff-primary: 'Poppins', sans-serif;
 
-/* Removes unnecessary space caused by line height */
+  --fs-400: 0.9375rem;
 
-h1,
-h2,
-h3,
-h4 {
-    line-height: 1.1;
-}
+  --fw-200: 200;
+  --fw-400: 400;
+  --fw-600: 600;
 
-/* Removes default list styling from ul, ol elements with a class */
-ul[class],
-ol[class] {
-  list-style: none;
-}
+  --clr-neutral-900: hsl(234, 12%, 34%);
+  --clr-neutral-400: hsl(229, 6%, 66%);
+  --clr-neutral-200: hsl(0, 0%, 98%);
 
-/* Sets core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
+  --clr-primary-1: hsl(0, 78%, 62%);
+  --clr-primary-2: hsl(34, 97%, 64%);
+  --clr-primary-3: hsl(180, 62%, 55%);
+  --clr-primary-4: hsl(212, 86%, 64%);
 
-/* Sets core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* Gives default styles to a elements that don't have a class */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Makes images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-/* Inherits fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Removes all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
